@@ -1,13 +1,25 @@
-.nav-text {
-	color: white;
-}
-
 .custom-nav {
 	background-color: #337ab7;
 	margin-bottom: 10px;
 }
 
-.row {
-	margin-left: 0px;
-	margin-right: 0px;
+.custom-nav a,
+.custom-nav a:visited {
+  color: white;
+}
+
+.custom-nav a:focus,
+.custom-nav a:hover,
+.custom-nav a:active {
+  color: #eaeaea;
+}
+
+.custom-nav .nav > li > a:focus,
+.custom-nav .nav > li > a:hover,
+.custom-nav .nav > li > a:active {
+  background-color: transparent;
+}
+
+.navbar-nav {
+  margin: 4px 0;
 }

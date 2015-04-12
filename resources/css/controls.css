@@ -3,8 +3,9 @@
  */
 
 /* Move down content because we have a fixed navbar that is 50px tall */
-body {
-  
+body,
+body.ui-mobile-viewport.ui-overlay-a {
+  position: relative;
 }
 
 
@@ -17,13 +18,19 @@ body {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
+.full-width-slider input {
+  display: none;
+}
+.no-margin-bottom {
+  margin-bottom: 0;
+}
 
 /*
  * Top navigation
  * Hide default border to remove 1px line.
  */
-.navbar-fixed-top {
-  border: 0;
+.navbar {
+  margin: 0;
 }
 .navbar-nav i {
   font-size: 20px;
@@ -87,16 +94,49 @@ body {
 .main .page-header {
   margin-top: 0;
 }
-.current-room-details {
+.lighting-controls,
+.media-controls,
+.hvac-controls {
   padding: 0 15px;
 }
-.room-status {
-  font-size: 18px;
-  padding: 10px;
+.lighting-group-control {
+  height: 80px;
+  padding: 5px;
 }
-.detail {
-  padding: 0 15px;
-  margin: 0;
+.song-control,
+.tv-control,
+.temp-control {
+  position: relative;
+}
+.song-control > div.controls,
+.tv-control > div.controls,
+.temp-control > div.controls {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 28px;
+}
+.song-status {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.volume-label {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.temp {
+  margin: 0 8px;
+}
+.temp-down {
+  color: #2D4471;
+}
+.temp-up {
+  color: #AA3939;
+}
+#songPlay {
+  display: none;
 }
 
 
@@ -119,38 +159,14 @@ body {
   border-radius: 50%;
 }
 
-/*
- * Sticky footer
- */
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-}
-
-.footer > .section-link {
-  height: 60px;
-  width: 100%;
-  padding: 10px 20px;
-  border-top: 1px solid #d0d0d0;
-}
 
 /*
- * Lightbulb colors
+ * jQuery Mobile overrides
  */
- .light.detail {
-  padding-top: 3px;
-  padding-bottom: 3px;
-  line-height: 24px;
- }
-.fa-lightbulb-o {
-  font-size: 24px;
+.ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a {
+  font-weight: normal;
 }
-.fa-lightbulb-o.on {
-  color: #E2D225;
-}
-.fa-lightbulb-o.off {
-  color: #555;
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+  text-shadow: none;
 }
