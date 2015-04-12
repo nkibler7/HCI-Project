@@ -7,6 +7,7 @@
 .home-screen-text {
 	margin-top: 50px;
 	position: relative;
+	color: #ecf0f1;
 }
 
 .lock {
@@ -16,5 +17,29 @@
 }
 
 .lock-color {
-	color: #333;
+	color: #ecf0f1;/*#333;*/
+}
+
+.lock-div {
+	padding-left:0;
+	padding-right:0;
+
+}
+
+.lock-button {
+	width:100%;
+	border-radius:0px;
+	border-color: transparent;
+}
+
+.lock-lights {
+	
+}
+
+.lock-media {
+	
+}
+
+.lock-hvac {
+	
 }
