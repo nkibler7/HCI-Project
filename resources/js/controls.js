@@ -42,6 +42,11 @@ $(function() {
     location.href = 'index.html';
   });
 
+  $('a.settings-link').click(function(e) {
+    e.preventDefault();
+    location.href = 'settings.html';
+  });
+
   tempDown.click(function() {
     var val = parseInt(temp.text()) - 1;
     temp.text(val);
