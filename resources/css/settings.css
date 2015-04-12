@@ -1,0 +1,16 @@
+.room-row {
+	border-bottom: 1px solid gray;
+	padding: 5px;
+}
+
+.room-row-first {
+	margin-top: 50px;
+}
+
+.room-text {
+	padding-bottom: 5px;
+}
+
+.clicked {
+	background-color: #70A2CD;
+}

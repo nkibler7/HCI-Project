@@ -1,0 +1,16 @@
+.lock-icon {
+	font-size: 1.7em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.home-screen-text {
+	margin-top: 50px;
+	position: relative;
+}
+
+.lock {
+	position: absolute;
+	bottom: 125px;
+	right: 50%
+}
