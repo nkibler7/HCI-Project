@@ -12,7 +12,7 @@ $(function() {
 	if (notifyParam != '') {
 		history.replaceState('', '', window.location.pathname);
 
-			navbar.find('.page-title').text(notifyParam.replace("_", " "));
+			navbar.find('.page-title').html('<i class="fa fa-angle-left"></i>&nbsp;&nbsp;' + notifyParam.replace("_", " "));
 			document.title = notifyParam.replace("_", " ") + "Settings";
 	}
 
