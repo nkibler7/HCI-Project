@@ -12,5 +12,9 @@
 .lock {
 	position: absolute;
 	bottom: 125px;
-	right: 50%
+	width: 100%;
+}
+
+.lock-color {
+	color: #333;
 }
