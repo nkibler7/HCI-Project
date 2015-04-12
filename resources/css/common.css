@@ -1,6 +1,7 @@
 .custom-nav {
 	background-color: #337ab7;
 	margin-bottom: 10px;
+  position: relative;
 }
 
 .custom-nav a,
@@ -22,4 +23,24 @@
 
 .navbar-nav {
   margin: 4px 0;
+}
+
+.navbar-header {
+  z-index: 2;
+}
+
+.navbar-title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  color: #eaeaea;
+  font-size: 18px;
+  line-height: 50px;
+  z-index: 1;
 }
