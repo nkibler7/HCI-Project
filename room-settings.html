@@ -36,10 +36,36 @@
           </h3>
         </div>
         <div class="col-xs-2">
-          <h3><i class="fa fa-plus"></i></h3>
         </div>
       </div>
     </nav>
+    <div class="container navbar-offset">
+        <ul class="nav nav-pills nav-justified">
+          <li  role="presentation" class="mode-select"><a href="#">Manual</a></li>
+          <li  role="presentation" class="mode-select active"><a href="#">Automatic</a></li>
+        </ul>
+      <div class="well">
+        <h3 class="well-header"><i class="fa fa-lightbulb-o"></i> &nbsp Lighting</h3>
+        <h4>&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> Add a Light Group</h4>
+        <h4>&nbsp&nbsp&nbsp<i class="fa fa-minus"></i> Remove a Light Group</h4>
+        <h4>&nbsp&nbsp&nbsp<input checked type="checkbox" class="adaptive"> Make home lighting adaptive</h4>
+      </div>
+      <div class="well">
+        <h3 class="well-header"><i class="fa fa-music"></i> &nbsp Media</h3>
+        <h4>&nbsp&nbsp&nbsp<input type="checkbox" class="adaptive"> Music should adaptively adjust</h4>
+        <h4>&nbsp&nbsp&nbsp<input checked type="checkbox" class="adaptive"> TV should adaptively adjust</h4>
+        <h4 hidden class="music-notif">No manual music settings available.</h4>
+      </div>
+      <div class="well">
+        <h3 class="well-header"><i class="fa fa-cloud"></i> &nbsp HVAC</h3>
+        <h4>&nbsp&nbsp&nbsp<input checked type="checkbox"> Record my habits</h4>
+        <h4>&nbsp&nbsp&nbsp<input checked type="checkbox" class="adaptive"> Adaptively adjust HVAC</h4>
+      </div>
+      <div class="text-right">
+        <button type="button" class="btn btn-success save-btn"><i class="fa fa-check"></i> Save</button>
+        <button type="button" class="btn btn-default revert-btn"><i class="fa fa-times"></i> Revert</button>
+      </div>
+    </div>
   </body>
 
   <script src="https://code.jquery.com/jquery.js"></script>
