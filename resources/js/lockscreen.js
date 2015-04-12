@@ -23,7 +23,7 @@ $(function() {
 
 			media.html('<i class="glyphicon glyphicon-ok"></i>');
 			setTimeout(function() {
-				media.html('<i class="fa fa-volume-up"></i>');
+				media.html('<i class="fa fa-music"></i>');
 			}, 700);
 		}, 450);
 	})
