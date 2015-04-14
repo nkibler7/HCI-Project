@@ -56,7 +56,7 @@
                 <div class="well lighting-group-control">
                   <strong>Kitchen Table</strong>
                   <form class="full-width-slider">
-                    <input type="range" value="50" min="0" max="100" data-mini="true" data-highlight="true">
+                    <input type="range" value="50" min="0" max="100" data-highlight="true">
                   </form>
                 </div>
               </div>
@@ -64,7 +64,7 @@
                 <div class="well lighting-group-control">
                   <strong>Countertop</strong>
                   <form class="full-width-slider">
-                    <input type="range" value="0" min="0" max="100" data-mini="true" data-highlight="true">
+                    <input type="range" value="0" min="0" max="100" data-highlight="true">
                   </form>
                 </div>
               </div>
@@ -74,7 +74,7 @@
                 <div class="well lighting-group-control">
                   <strong>Pantry</strong>
                   <form class="full-width-slider">
-                    <input type="range" value="100" min="0" max="100" data-mini="true" data-highlight="true">
+                    <input type="range" value="100" min="0" max="100" data-highlight="true">
                   </form>
                 </div>
               </div>
@@ -98,18 +98,19 @@
               </p>
               <p class="volume-label"><strong>Volume</strong></p>
               <form class="full-width-slider">
-                <input type="range" value="25" min="0" max="100" data-mini="true" data-highlight="true">
+                <input type="range" value="25" min="0" max="100" data-highlight="true">
               </form>
             </div>
             <div class="well tv-control">
               <strong>TV Control</strong>
               <div class="controls">
-                <i class="fa fa-minus"></i>&nbsp;
-                <i class="fa fa-plus"></i>
+                <i class="fa fa-minus" id="channelDown"></i>
+                <span id="channel">32</span>
+                <i class="fa fa-plus" id="channelUp"></i>
               </div>
               <p class="volume-label"><strong>Volume</strong></p>
               <form class="full-width-slider">
-                <input type="range" value="75" min="0" max="100" data-mini="true" data-highlight="true">
+                <input type="range" value="75" min="0" max="100" data-highlight="true">
               </form>
             </div>
           </div>

@@ -26,6 +26,9 @@ $(function() {
   var temp = $('#temp');
   var tempDown = $('#tempDown');
   var tempUp = $('#tempUp');
+  var channel = $('#channel');
+  var channelDown = $('#channelDown');
+  var channelUp = $('#channelUp');
 
   var songStatus = $('#songStatus');
   var songPrev = $('#songPrev');
@@ -55,6 +58,16 @@ $(function() {
   tempUp.click(function() {
     var val = parseInt(temp.text()) + 1;
     temp.text(val);
+  });
+
+  channelDown.click(function() {
+    var val = parseInt(channel.text()) - 1;
+    channel.text(val);
+  });
+
+  channelUp.click(function() {
+    var val = parseInt(channel.text()) + 1;
+    channel.text(val);
   });
 
   songPause.click(function() {

@@ -170,3 +170,7 @@ body.ui-mobile-viewport.ui-overlay-a {
 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
   text-shadow: none;
 }
+
+.ui-slider-track {
+  margin-left: 15px;
+}
