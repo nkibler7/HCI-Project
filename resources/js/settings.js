@@ -6,9 +6,7 @@ $(function() {
 
 		t.addClass('clicked');
 
-		setTimeout(function() {
-			window.location.href = 'room-settings.html?room=' + location.replace(" ", "_");
-		}, 500);
+		window.location.href = 'room-settings.html?room=' + location.replace(" ", "_");
 	});
 
 });
